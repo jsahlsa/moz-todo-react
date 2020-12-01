@@ -2,14 +2,18 @@ import React from "react";
 import Todo from "./components/Todo";
 
 function App(props) {
+  // console.log(props.tasks);
   const taskList = props.tasks.map(task => (
-  <Todo 
-  id={task.id} 
-  name={task.name} 
-  completed={task.completed}
-  key={task.id}
-   />
+    <Todo 
+      id={task.id} 
+      name={task.name} 
+      completed={task.completed}
+      key={task.id}
+    />
   ));
+  console.log(taskList);
+
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
