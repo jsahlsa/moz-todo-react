@@ -4,17 +4,16 @@ import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 
 function App(props) {
-  // console.log(props.tasks);
-  const taskList = props.tasks.map(task => (
-    <Todo 
-      id={task.id} 
-      name={task.name} 
+  console.log(props.tasks);
+  const taskList = props.tasks.map((task) => (
+    <Todo
+      id={task.id}
+      name={task.name}
       completed={task.completed}
       key={task.id}
     />
   ));
-  console.log(taskList);
-
+  //console.log(taskList);
 
   return (
     <div className="todoapp stack-large">
