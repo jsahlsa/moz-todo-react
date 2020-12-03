@@ -4,8 +4,9 @@ function Form(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        alert('Hi!');
+        props.addTask('Hello!');
     }
+
 
     return (
       <form onSubmit={handleSubmit}>
